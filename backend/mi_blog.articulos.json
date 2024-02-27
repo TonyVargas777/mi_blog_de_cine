@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea93"
+  },
+  "titulo": "Ciudadano Kane",
+  "contenido": "En el clásico de Orson Welles, \"Ciudadano Kane\", se narra la vida de Charles Foster Kane, un magnate de los medios de comunicación. A través de la visión de diferentes personas que lo conocieron, la película desentraña la complejidad de su personalidad y la ambición que lo llevó a la cima del poder. La trama se desarrolla a partir de la búsqueda del significado detrás de la última palabra de Kane: \"Rosebud\".",
+  "imagen": "Ciudadano Kane.jpg",
+  "fecha": "1941"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea94"
+  },
+  "titulo": "El Padrino",
+  "contenido": "Dirigida por Francis Ford Coppola, \"El Padrino\" nos sumerge en el mundo del crimen organizado y la familia Corleone. La película sigue la vida de Michael Corleone, interpretado por Al Pacino, mientras intenta mantener el equilibrio entre sus lazos familiares y su creciente involucramiento en los negocios ilegales de su familia.",
+  "imagen": "El Padrino.jpg",
+  "fecha": "1972"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea95"
+  },
+  "titulo": "Casablanca",
+  "contenido": "Ambientada durante la Segunda Guerra Mundial, \"Casablanca\" se centra en la historia de amor entre Rick Blaine, un propietario de un café en Casablanca, y Ilsa Lund, una mujer que lo dejó años atrás sin explicación. La película captura la intriga, la pasión y el dilema moral en medio de la guerra.",
+  "imagen": "Casablanca.jpg",
+  "fecha": "1942"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea96"
+  },
+  "titulo": "2001: Una odisea del espacio",
+  "contenido": "Stanley Kubrick dirige esta obra maestra de la ciencia ficción que explora la evolución de la humanidad, desde los albores de la civilización hasta un futuro en el espacio profundo, donde un misterioso monolito afecta el destino de la humanidad.",
+  "imagen": "2001 Una odisea del espacio.jpg",
+  "fecha": "1968"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea97"
+  },
+  "titulo": "Cadena perpetua",
+  "contenido": "Basada en una historia de Stephen King, esta película dirigida por Frank Darabont sigue la vida de un hombre condenado injustamente por asesinato y su amistad con otros reclusos mientras pasa décadas en prisión. La película aborda temas de esperanza, redención y amistad duradera.",
+  "imagen": "Cadena perpetua.jpg",
+  "fecha": "1994"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea98"
+  },
+  "titulo": "Pulp Fiction",
+  "contenido": "Dirigida por Quentin Tarantino, \"Pulp Fiction\" entrelaza múltiples historias de personajes en el mundo del crimen. Con su narrativa no lineal, diálogos memorables y estilo distintivo, la película explora la violencia, la moralidad y el absurdo de la vida.",
+  "imagen": "Pulp Fiction.jpg",
+  "fecha": "1994"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea99"
+  },
+  "titulo": "El ciudadano ilustre",
+  "contenido": "Esta película argentina sigue a un famoso escritor que regresa a su pueblo natal después de muchos años para recibir un premio. A medida que interactúa con la comunidad, surgen conflictos y tensiones, cuestionando la relación entre la fama y la autenticidad.",
+  "imagen": "El ciudadano ilustre.jpg",
+  "fecha": "2016"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea9a"
+  },
+  "titulo": "Sed de mal",
+  "contenido": "Dirigida por Orson Welles, esta película de cine negro se sumerge en un oscuro mundo de corrupción y crimen. Un detective y un policía mexicano investigan un caso de asesinato en la frontera entre Estados Unidos y México, descubriendo una red de engaño y traición.",
+  "imagen": "Sed de mal.jpg",
+  "fecha": "1958"
+},
+{
+  "_id": {
+    "$oid": "64ebe5d971d2fb6a03eec343"
+  },
+  "titulo": "El caballero oscuro",
+  "contenido": "Christopher Nolan dirige esta entrega de Batman, en la que el superhéroe se enfrenta al caos infligido por el Joker, un villano maestro del engaño. La película explora temas de moralidad, caos y la fina línea entre el bien y el mal.",
+  "imagen": "El caballero de la noche.jpg",
+  "fecha": "2008"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed47"
+  },
+  "titulo": "Uno de los nuestros",
+  "contenido": "Martin Scorsese dirige esta cruda película que sigue la vida de Henry Hill, un gánster involucrado en la mafia italiana en Nueva York. La película examina la lealtad, la violencia y las consecuencias de una vida en el crimen organizado.",
+  "fecha": "1990",
+  "imagen": "Uno de los nuestros.jpg"
+}]

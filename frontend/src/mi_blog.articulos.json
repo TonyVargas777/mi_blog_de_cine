@@ -1,0 +1,181 @@
+[{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea93"
+  },
+  "titulo": "Ciudadano Kane",
+  "contenido": "En el clásico de Orson Welles, \"Ciudadano Kane\", se narra la vida de Charles Foster Kane, un magnate de los medios de comunicación. A través de la visión de diferentes personas que lo conocieron, la película desentraña la complejidad de su personalidad y la ambición que lo llevó a la cima del poder. La trama se desarrolla a partir de la búsqueda del significado detrás de la última palabra de Kane: \"Rosebud\".",
+  "imagen": "Ciudadano Kane.jpg",
+  "fecha": "1941"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea94"
+  },
+  "titulo": "El Padrino",
+  "contenido": "Dirigida por Francis Ford Coppola, \"El Padrino\" nos sumerge en el mundo del crimen organizado y la familia Corleone. La película sigue la vida de Michael Corleone, interpretado por Al Pacino, mientras intenta mantener el equilibrio entre sus lazos familiares y su creciente involucramiento en los negocios ilegales de su familia.",
+  "imagen": "El Padrino.jpg",
+  "fecha": "1972"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea95"
+  },
+  "titulo": "Casablanca",
+  "contenido": "Ambientada durante la Segunda Guerra Mundial, \"Casablanca\" se centra en la historia de amor entre Rick Blaine, un propietario de un café en Casablanca, y Ilsa Lund, una mujer que lo dejó años atrás sin explicación. La película captura la intriga, la pasión y el dilema moral en medio de la guerra.",
+  "imagen": "Casablanca.jpg",
+  "fecha": "1942"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea96"
+  },
+  "titulo": "2001: Una odisea del espacio",
+  "contenido": "Stanley Kubrick dirige esta obra maestra de la ciencia ficción que explora la evolución de la humanidad, desde los albores de la civilización hasta un futuro en el espacio profundo, donde un misterioso monolito afecta el destino de la humanidad.",
+  "imagen": "2001 Una odisea del espacio.jpg",
+  "fecha": "1968"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea97"
+  },
+  "titulo": "Cadena perpetua",
+  "contenido": "Basada en una historia de Stephen King, esta película dirigida por Frank Darabont sigue la vida de un hombre condenado injustamente por asesinato y su amistad con otros reclusos mientras pasa décadas en prisión. La película aborda temas de esperanza, redención y amistad duradera.",
+  "imagen": "Cadena perpetua.jpg",
+  "fecha": "1994"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea98"
+  },
+  "titulo": "Pulp Fiction",
+  "contenido": "Dirigida por Quentin Tarantino, \"Pulp Fiction\" entrelaza múltiples historias de personajes en el mundo del crimen. Con su narrativa no lineal, diálogos memorables y estilo distintivo, la película explora la violencia, la moralidad y el absurdo de la vida.",
+  "imagen": "Pulp Fiction.jpg",
+  "fecha": "1994"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea99"
+  },
+  "titulo": "El ciudadano ilustre",
+  "contenido": "Esta película argentina sigue a un famoso escritor que regresa a su pueblo natal después de muchos años para recibir un premio. A medida que interactúa con la comunidad, surgen conflictos y tensiones, cuestionando la relación entre la fama y la autenticidad.",
+  "imagen": "El ciudadano ilustre.jpg",
+  "fecha": "2016"
+},
+{
+  "_id": {
+    "$oid": "64e7e813d4f9b5c7fd56ea9a"
+  },
+  "titulo": "Sed de mal",
+  "contenido": "Dirigida por Orson Welles, esta película de cine negro se sumerge en un oscuro mundo de corrupción y crimen. Un detective y un policía mexicano investigan un caso de asesinato en la frontera entre Estados Unidos y México, descubriendo una red de engaño y traición.",
+  "imagen": "Sed de mal.jpg",
+  "fecha": "1958"
+},
+{
+  "_id": {
+    "$oid": "64ebe5d971d2fb6a03eec343"
+  },
+  "titulo": "El caballero oscuro",
+  "contenido": "Christopher Nolan dirige esta entrega de Batman, en la que el superhéroe se enfrenta al caos infligido por el Joker, un villano maestro del engaño. La película explora temas de moralidad, caos y la fina línea entre el bien y el mal.",
+  "imagen": "El caballero de la noche.jpg",
+  "fecha": "2008"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed47"
+  },
+  "titulo": "Uno de los nuestros",
+  "contenido": "Martin Scorsese dirige esta cruda película que sigue la vida de Henry Hill, un gánster involucrado en la mafia italiana en Nueva York. La película examina la lealtad, la violencia y las consecuencias de una vida en el crimen organizado.",
+  "fecha": "1990",
+  "imagen": "Uno de los nuestros.jpg"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed48"
+  },
+  "titulo": "Doce hombres sin piedad",
+  "contenido": "Los doce miembros de un jurado deben juzgar a un adolescente acusado de haber matado a su padre. Todos menos uno están convencidos de la culpabilidad del acusado. El que disiente intenta con sus razonamientos introducir en el debate una duda razonable que haga recapacitar a sus compañeros para que cambien el sentido de su voto.",
+  "fecha": "1957",
+  "imagen": "Doce hombres sin piedad.jpg"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed49"
+  },
+  "titulo": "La lista de Schindler",
+  "contenido": "Oskar Schindler (Liam Neeson), un empresario alemán de gran talento para las relaciones públicas, busca ganarse la simpatía de los nazis de cara a su beneficio personal. Después de la invasión de Polonia por los alemanes en 1939, Schindler consigue, gracias a sus relaciones con los altos jerarcas nazis, la propiedad de una fábrica de Cracovia. Allí emplea a cientos de operarios judíos, cuya explotación le hace prosperar rápidamente, gracias sobre todo a su gerente Itzhak Stern (Ben Kingsley), también judío. Pero conforme la guerra avanza, Schindler y Stern comienzan ser conscientes de que a los judíos que contratan, los salvan de una muerte casi segura en el temible campo de concentración de Plaszow, que lidera el Comandante nazi Amon Goeth (Ralph Fiennes), un hombre cruel que disfruta ejecutando judíos.",
+  "fecha": "1993",
+  "imagen": "La lista de Schindler.jpg"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed50"
+  },
+  "titulo": "El gran dictador",
+  "contenido": "Un humilde barbero judío que combatió con el ejército de Tomania en la Primera Guerra Mundial vuelve a su casa años después del fin del conflicto. Amnésico a causa de un accidente de avión, no recuerda prácticamente nada de su vida pasada, y no conoce la situación política actual del país: Adenoid Hynkel, un dictador fascista y racista, ha llegado al poder y ha iniciado la persecución del pueblo judío, a quien considera responsable de la situación de crisis que vive el país. Paralelamente, Hynkel y sus colaboradores han empezado a preparar una ofensiva militar destinada a la conquista de todo el mundo.",
+  "fecha": "1940",
+  "imagen": "El gran dictador.jpg"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed51"
+  },
+  "titulo": "La vida es bella",
+  "contenido": "En 1939, a punto de estallar la Segunda Guerra Mundial (1939-1945), el extravagante Guido llega a Arezzo, en la Toscana, con la intención de abrir una librería. Allí conoce a la encantadora Dora y, a pesar de que es la prometida del fascista Rodolfo, se casa con ella y tiene un hijo. Al estallar la guerra, los tres son internados en un campo de exterminio, donde Guido hará lo imposible para hacer creer a su hijo que la terrible situación que están padeciendo es tan sólo un juego.",
+  "fecha": "1997",
+  "imagen": "La vida es bella.jpg"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed52"
+  },
+  "titulo": "Psicosis",
+  "contenido": "Marion Crane, una joven secretaria, tras cometer el robo de un dinero en su empresa, huye de la ciudad y, después de conducir durante horas, decide descansar en un pequeño y apartado motel de carretera regentado por un tímido joven, Norman Bates, que vive en la casa de al lado con su madre.",
+  "fecha": "1960",
+  "imagen": "Psicosis.jpg"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed53"
+  },
+  "titulo": "Alguien voló sobre el nido del cuco",
+  "contenido": "Randle McMurphy (Jack Nicholson), un hombre condenado por asalto, y un espíritu libre que vive contracorriente, es recluido en un hospital psiquiátrico. La inflexible disciplina del centro acentúa su contagiosa tendencia al desorden, que acabará desencadenando una guerra entre los pacientes y el personal de la clínica con la fría y severa enfermera Ratched (Louise Fletcher) a la cabeza. La suerte de cada paciente del pabellón está en juego.",
+  "fecha": "1975",
+  "imagen": "Alguien voló sobre el nido del cuco.jpg"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed54"
+  },
+  "titulo": "American History X",
+  "contenido": "Derek (Edward Norton), un joven skin head californiano de ideología neonazi, es encarcelado por asesinar a un negro que pretendía robarle su furgoneta. Cuando sale de prisión y regresa a su barrio dispuesto a alejarse del mundo de la violencia, se encuentra con que su hermano pequeño (Edward Furlong), para quien Derek es el modelo a seguir, sigue el mismo camino que a él lo condujo a la cárcel.",
+  "fecha": "1998",
+  "imagen": "American History X.jpg"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed55"
+  },
+  "titulo": "Con faldas y a lo loco",
+  "contenido": "Época de la Ley Seca (1920-1933). Joe y Jerry son dos músicos del montón que se ven obligados a huir después de ser testigos de un ajuste de cuentas entre dos bandas rivales. Como no encuentran trabajo y la mafia los persigue, deciden vestirse de mujeres y tocar en una orquesta femenina. Joe (Curtis) para conquistar a Sugar Kane (Monroe), la cantante del grupo, finge ser un magnate impotente; mientras tanto, Jerry (Lemmon) es cortejado por un millonario que quiere casarse con él. ",
+  "fecha": "1959",
+  "imagen": "Con faldas y a lo loco.jpg"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed56"
+  },
+  "titulo": "Seven (Se7en)",
+  "contenido": "El veterano teniente Somerset (Morgan Freeman), del departamento de homicidios, está a punto de jubilarse y ser reemplazado por el ambicioso e impulsivo detective David Mills (Brad Pitt). Ambos tendrán que colaborar en la resolución de una serie de asesinatos cometidos por un psicópata que toma como base la relación de los siete pecados capitales: gula, pereza, soberbia, avaricia, envidia, lujuria e ira. Los cuerpos de las víctimas, sobre los que el asesino se ensaña de manera impúdica, se convertirán para los policías en un enigma que les obligará a viajar al horror y la barbarie más absoluta.",
+  "fecha": "1995",
+  "imagen": "Seven (Se7en).jpg"
+},
+{
+  "_id": {
+    "$oid": "64ed7cae4a506febc905ed57"
+  },
+  "titulo": "Star Wars: Una nueva esperanza",
+  "contenido": "La princesa Leia, líder del movimiento rebelde que desea reinstaurar la República en la galaxia en los tiempos ominosos del Imperio, es capturada por las Fuerzas Imperiales, capitaneadas por el implacable Darth Vader, el sirviente más fiel del Emperador. El intrépido y joven Luke Skywalker, ayudado por Han Solo, capitán de la nave espacial 'El Halcón Milenario', y los androides, R2D2 y C3PO, serán los encargados de luchar contra el enemigo e intentar rescatar a la princesa para volver a instaurar la justicia en el seno de la galaxia.",
+  "fecha": "1977",
+  "imagen": "4.jpg"
+}
+]

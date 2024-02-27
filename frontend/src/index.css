@@ -1,0 +1,574 @@
+html {  
+  height: 100%;
+  background-image: url(/img/fondo-puntos-azules-color-blanco_42331-244.avif);
+  background-attachment: fixed;
+}
+body {
+  font-family: Lucida Handwriting, sans-serif, Arial, Helvetica;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+ height: 100%;
+}
+.layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "header header header lateral"
+    "nav nav nav lateral"
+    "content content content lateral"
+    "footer footer footer lateral";
+  grid-template-rows: 100px 70px auto 70px;
+  grid-template-columns: 1fr 1fr 1fr 15%;
+}
+.header {  
+  grid-area: header;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  background: transparent;
+}
+.header h1 {
+  margin-top: 30px;
+}
+.camara {
+  width: 200px;
+  margin-right: -25px;
+  margin-left: -35px;
+}
+.camara img {
+  width: 40%;
+}
+.nav {
+  grid-area: nav;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;  
+  width: 100%;
+}
+.nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav li {
+  padding: 0px;
+}
+.nav a {
+  display: block;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: lighter;
+  color: white;
+  text-decoration: none;
+  transition: all 300ms;
+}
+.nav a:hover {
+  transform: scale(1.2, 1.2);
+}
+.content {
+  grid-area: content;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: initial;  
+  justify-content: center;
+  padding-top: 16px;
+  margin-bottom: 30px;
+  flex-grow: 1;
+  min-height: screen;
+  min-width: screen;
+}
+#mern{
+  width: 40%;
+  padding: 5px;
+  border: 6px double white;
+}
+#gif{
+  width: 45%;
+  padding: 5px;
+  border: 6px double blue;
+}
+.articulo-item {  
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: column;
+  background: lightblue;
+  background-image: url(/img/fondo-puntos-azules-color-blanco_42331-244.avif);
+  border: double 15px rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  width: 15%;
+  margin: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 20%;
+}
+.articulo-item:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border: 8px solid white;
+  outline: #0b70e1 3px solid;
+  transform: scale(1.1);
+  transition: all 400ms;
+  color: white;
+  box-shadow: 10px 10px 20px #03228f;
+  & img {    
+    transform: scale(1.3);
+    transition: all 300ms;
+    border: 6px double white;
+  }
+  & a {
+    color: white;
+  }
+}
+.articulo-item .mascara {
+  flex-grow: 1;
+  width: 70%;
+  height: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+img {
+  border: 8px double blue;
+}
+.articulo-item .mascara img {
+  width: 100%;
+  max-width: 250px;
+}
+.articulo-item .datos {  
+  flex-grow: 1;
+  width: 90%;
+  text-align: center;
+
+}
+.articulo-item p {
+  text-align: justify;
+}
+.articulo-item h3 {
+  font-size: 30px;  
+  flex-grow: 1;
+}
+.articulo-item h3 a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  flex-grow: 1;
+}
+.articulo-item h3 a:hover {
+  color: gold;
+}
+.jumbo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  height: fit-content;
+  padding: 55px;
+  padding-bottom: 75px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border: 2px solid blue;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px #ddd;
+  margin: 25px auto;
+  color: white;
+}
+.jumbo img {
+  width: 115%;
+}
+.jumbo h1 {
+  font-size: 35px;
+  color: white;
+}
+.jumbo p,
+h3 {
+  display: block;
+  margin-bottom: 40px;
+  color: white;
+}
+.jumbo a{
+  color:white;
+}
+.red{
+  background: #000;
+  height: 40px;
+  width: 40px;
+}
+.title {
+  color: #000;
+}
+.jumbo-articulo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ficha-articulo {
+  width: 50%;
+  text-align: justify;
+}
+.button,
+button,
+input[type="submit"],
+input[type="button"],
+.edit {
+  text-decoration: none;
+  background: #0b70e1;
+  width: auto;
+  color: white;
+  border: 1px solid white;
+  outline: 0;
+  padding: 15px;
+  border-radius: 3px;
+  margin-top: 15px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.button:hover {
+  transform: scale(1.2);
+}
+.edit {
+  margin-right: 20px;
+}
+.edit:hover {
+  background: #e77b00;
+}
+.delete:hover {
+  background: #9b0202;
+}
+.lateral {
+  grid-area: lateral;
+  padding-top: 80%;
+  min-height: 100%;
+  width: auto;
+  border-left: 5px double white;
+}
+input[type="text"],
+textarea {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  background: #f6f7f9;
+  color: #454545;
+  width: 80%;
+  opacity: 4;
+  outline: 0;
+  border-color: transparent;
+}
+.search {
+  width: 13%;
+  border: 2px solid blue;
+  position: fixed;
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 20px;
+  padding-top: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px #ddd;
+}
+.formulario{
+  width: 60%;
+}
+.search input {
+  border: 1px solid lightgrey;
+}
+textarea {
+  height: 120px;
+}
+.form-group {
+  width: 100%;
+  margin: 0 auto;
+}
+.form-group label {
+  display: block;
+  text-align: left;
+  color: white;
+  margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group textarea {
+  border: 1px solid #ddd;
+  outline: 0;
+  width: 100%;
+  margin-bottom: 15px;
+}
+footer {
+  grid-area: footer;
+  background: #d1defa;
+  color: #454545;
+  border-top: 1px solid white;
+  text-align: left;
+  line-height: 60px;
+  padding-left: 25px;
+  margin-top: auto;
+  width: 99%; 
+  position:fixed;
+  bottom: 0;
+}
+.jumbo .mascara {
+  width: 250px;
+  height: 30%;
+}
+.form-group .mascara {
+  margin: 0px;
+  width: 100%;
+}
+.form-group .mascara img {
+  width: 100%;
+}
+
+.dots-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  width: 50%;
+  height: 10%;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #b3d4fc;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: #6793fb;
+    box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+  }
+
+  100% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+}
+
+.type {
+  margin: auto;
+  place-items: center;
+  font-size: 3rem;
+  font-family: "Courier New";
+  border-right: 0.1em solid white;
+  animation: blink 1s steps(1) infinite;
+  width: 0;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20) 1s 1 both, blink 1s steps(1) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 425px;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 1000px) {
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  .layout {
+    width: 97%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "lateral"
+      "footer";
+    grid-template-rows: 100px 70px auto 50px 50px;
+    grid-template-columns: 100%;
+  }  
+  .articulo-item .mascara {
+    width: 200px;
+  }  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vh;
+    justify-items: center;
+  }
+  .articulo-item {
+    width: 30%;
+    min-height: fit-content;
+    margin-top: 20px;
+    margin: 20px;
+  }
+  .content{
+    flex-direction: row;    
+    max-width: 100vh;
+  }
+   nav {    
+    display: flex;
+    flex-direction: column;
+    width: 100vh;    
+  }
+  .header{
+    position: relative;
+  }
+  .h1_header{
+    margin-left:3%;
+  }
+  .jumbo{
+    width: 80%;
+    
+    max-width: 100vh;
+    
+  }
+  .jumbo-articulo {
+    align-items: center;
+  }
+  .jumbo-articulo img {
+    width: 200px;
+  }
+  .camara {
+    width: 20%;
+    margin-right: -25px;
+    margin-left: -55px;
+  }  
+  .lateral {
+    grid-area: lateral;
+    display: flex;
+    justify-content: center;
+  }
+  .search {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 90px;    
+    margin: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px #ddd;    
+    bottom: -15px;
+    left: 20px;
+    position: fixed;
+  }
+  .search form{
+    display: flex;
+    width: 90%;
+  }  
+  .footer{
+    grid-area: footer;
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  html{
+    width: 100%;
+    height: 100%;
+  }  
+  .layout {
+    width: 99%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "lateral"
+      "footer";
+    grid-template-rows: 100px 70px auto 50px 50px;
+    grid-template-columns: auto;
+  }
+  nav { 
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+  }
+  .header{
+    position: relative;
+  }
+  .camara {
+    width: 20%;
+    height: 20%;
+    margin-right: -25px;
+    margin-left: -55px;
+  }
+  .content{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbo{    
+    width: 80%;
+    max-width: 100vh;
+    padding: 40px;
+  }  
+  .articulo-item{
+    width: 70%;
+    min-height: fit-content;
+  }
+}
