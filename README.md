@@ -1,7 +1,7 @@
 <h1 align="center">
  Aplicación MERN Stack de un Blog de Cine. 
 </h1>
-<h2>MongoDB, ExpresJS, ReactJs, NodeJS</h2>
+<h2 align="center">MongoDB, ExpresJS, ReactJs, NodeJS</h2>
 <hr>
 
 
