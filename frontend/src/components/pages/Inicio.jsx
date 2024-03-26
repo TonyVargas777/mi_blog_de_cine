@@ -1,7 +1,12 @@
+import { useEffect } from "react"
 import React from 'react'
-import {Link} from "react-router-dom"
 
 export const Inicio = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='jumbo'>
       <h1 className='type'>Bienvenido a Mi_Blog</h1>
@@ -13,7 +18,6 @@ export const Inicio = () => {
         </div>
           
       </div>
-      {/* <Link to="/articulos" className='button'>Ver los artículos</Link> */}
     </div>
   )
 }

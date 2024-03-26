@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "../../hooks/useForm";
 import { Peticion } from "../../helpers/Peticion";
 import { Global } from "../../helpers/Global";
@@ -46,6 +46,11 @@ export const Crear = () => {
       setResultado("error");
     }
   }; 
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="jumbo">
       <h1>Crear artículo:</h1>

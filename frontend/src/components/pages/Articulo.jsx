@@ -36,6 +36,11 @@ export const Articulo = () => {
 
     setCargando(false);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="jumbo">
       {cargando ? (

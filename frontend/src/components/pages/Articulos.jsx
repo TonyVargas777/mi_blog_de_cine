@@ -23,6 +23,11 @@ export const Articulos = () => {
 
     setCargando(false);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <>
       {cargando ? (
