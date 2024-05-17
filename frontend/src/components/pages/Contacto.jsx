@@ -11,7 +11,7 @@ export const Contacto = () => {
       <h1>Contacto:</h1>
       <article>
         <a
-          href="https://linkedin.com/in/tony-vargas-garcía-122b1424b"
+          href="https://linkedin.com/in/tony-vargas-garcía"
           target="blank"
         >
           <img
@@ -25,10 +25,10 @@ export const Contacto = () => {
         </a>
       </article>
       <a
-        href="https://linkedin.com/in/tony-vargas-garcía-122b1424b"
+        href="https://linkedin.com/in/tony-vargas-garcía"
         alt="linkedin"
       >
-        https://linkedin.com/in/tony-vargas-garcía-122b1424b
+        LINKEDIN
       </a>
 
       <div>
@@ -44,7 +44,7 @@ export const Contacto = () => {
         </a>
       </div>
       <a href="https://wa.me/34661871759" alt="github">
-        WhatsApp number: +34 661 87 17 59
+        WhatsApp
       </a>
       <article>
         <a
@@ -64,7 +64,7 @@ export const Contacto = () => {
         </a>
       </article>
       <a href="https://github.com/TonyVargas777" alt="github">
-        https://github.com/TonyVargas777
+        GITHUB
       </a>
       <article>
         <a href="mailto:tonacovargas@hotmail.com" target="blank">
