@@ -4,10 +4,15 @@ const cors = require("cors");
 const cron = require('node-cron');
 const loadJSONToDB = require('./helpers/loadJSONToDB'); // Ruta al nuevo script
 
-// Configura una tarea cron (por ejemplo, cada hora en punto)
+// Configura una tarea cron (por ejemplo, cada 5 minutos)
+console.log('Tarea cron configurada para ejecutarse cada 5 minutos');
 cron.schedule('*/5 * * * *', async () => {
-  console.log('Ejecutando tarea programada: cargar JSON a MongoDB');
-  await loadJSONToDB();
+  console.log('Ejecutando tarea cron en el servidor...');
+  try {
+    await loadJSONToDB();
+  } catch (error) {
+    console.error('Error al ejecutar la tarea programada:', error);
+  }
 });
 
 // Inicializar app
