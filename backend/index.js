@@ -1,10 +1,10 @@
-const { conexion } = require("./basedatos/conexion");
+const conexion = require("./basedatos/conexion");
 const express = require("express");
 const cors = require("cors");
 const cron = require('node-cron');
 const loadJSONToDB = require('./helpers/loadJSONToDB'); // Ruta al nuevo script
 
-// Configura una tarea cron (por ejemplo, cada día a las 2:00 AM)
+// Configura una tarea cron (por ejemplo, cada hora en punto)
 cron.schedule('0 * * * *', async () => {
   console.log('Ejecutando tarea programada: cargar JSON a MongoDB');
   await loadJSONToDB();
