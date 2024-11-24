@@ -5,7 +5,7 @@ const cron = require('node-cron');
 const loadJSONToDB = require('./helpers/loadJSONToDB'); // Ruta al nuevo script
 
 // Configura una tarea cron (por ejemplo, cada hora en punto)
-cron.schedule('0 * * * *', async () => {
+cron.schedule('*/5 * * * *', async () => {
   console.log('Ejecutando tarea programada: cargar JSON a MongoDB');
   await loadJSONToDB();
 });
