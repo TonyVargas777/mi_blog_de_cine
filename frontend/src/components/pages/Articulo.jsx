@@ -11,7 +11,7 @@ export const Articulo = () => {
   const [articuloAEliminar, setArticuloAEliminar] = useState(null); // Estado para almacenar el artículo a eliminar
 
   const params = useParams();
-  const navigate = useNavigate(); // Para redirigir después de la eliminación
+  const navigate = useNavigate(); // Usamos el hook para redirigir
 
   const eliminar = async (id) => {
     // Petición DELETE para eliminar el artículo
@@ -77,10 +77,16 @@ export const Articulo = () => {
           <div className="jumbo-articulo">
             <div className="mascara">
               {articulo.imagen !== "default.png" && (
-                <img src={Global.url + "imagen/" + articulo.imagen} alt={articulo.titulo} />
+                <img
+                  src={Global.url + "imagen/" + articulo.imagen}
+                  alt={articulo.titulo}
+                />
               )}
               {articulo.imagen === "default.png" && (
-                <img src="https://www.idsplus.net/wp-content/uploads/js-logo-badge-512.png.png" alt="Imagen por defecto" />
+                <img
+                  src="https://www.idsplus.net/wp-content/uploads/js-logo-badge-512.png.png"
+                  alt="Imagen por defecto"
+                />
               )}
             </div>
             <div className="ficha-articulo">
@@ -103,6 +109,13 @@ export const Articulo = () => {
             </button>
           </div>
 
+          {/* Botón Volver */}
+          <div>
+          <button className="volver" onClick={() => navigate("/articulos")}>
+            Volver
+          </button>
+          </div>
+
           {/* Popup de confirmación */}
           {showConfirmPopup && (
             <div className="popup-confirmacion">
@@ -110,6 +123,12 @@ export const Articulo = () => {
                 <h3>¿Estás seguro de que quieres borrar este artículo?</h3>
                 <button onClick={cancelarEliminacion}>No</button>
                 <button onClick={confirmarEliminacion}>Sí</button>
+                <h3>Recuerda que esta página es una demo.</h3>
+            <h3>Puedes realizar diferentes tareas como:</h3>
+            <h3>Crear un artículo, Editarlo o Borrarlo.</h3>
+            <h3>
+              Recuerda que cada 10 minutos se reiniciará la BD.
+            </h3>
               </div>
             </div>
           )}

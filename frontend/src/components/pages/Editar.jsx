@@ -86,10 +86,14 @@ export const Editar = () => {
       <h1>Editar artículo:</h1>
       <p>Formulario para editar: {articulo.titulo}</p>
 
-      <strong>{resultado === "guardado" ? "Artículo guardado con éxito" : ""}</strong>
-      <strong>{resultado === "error" ? "Los datos son incorrectos" : ""}</strong>
+      <strong>
+        {resultado === "guardado" ? "Artículo guardado con éxito" : ""}
+      </strong>
+      <strong>
+        {resultado === "error" ? "Los datos son incorrectos" : ""}
+      </strong>
 
-      <form className="formulario" onSubmit={e => e.preventDefault()}>
+      <form className="formulario" onSubmit={(e) => e.preventDefault()}>
         <div className="form-group">
           <label htmlFor="titulo">Título</label>
           <input
@@ -131,11 +135,21 @@ export const Editar = () => {
           </div>
           <input type="file" name="file0" id="file" />
         </div>
+        <div>
+          {/* Botón para mostrar el popup */}
+          <button
+            type="button"
+            onClick={mostrarPopupConfirmacion}
+            className="edit"
+          >
+            Guardar
+          </button>
+          {/* Botón Volver */}
 
-        {/* Botón para mostrar el popup */}
-        <button type="button" onClick={mostrarPopupConfirmacion} className="btn btn-success">
-          Guardar
-        </button>
+          <button className="volver" onClick={() => navigate("/articulos")}>
+            Volver
+          </button>
+        </div>
       </form>
 
       {/* Popup de confirmación */}
@@ -145,6 +159,10 @@ export const Editar = () => {
             <h3>¿Estás seguro de que quieres guardar los cambios?</h3>
             <button onClick={cancelarEdicion}>No</button>
             <button onClick={confirmarEdicion}>Sí</button>
+            <h3>Recuerda que esta página es una demo.</h3>
+            <h3>Puedes realizar diferentes tareas como:</h3>
+            <h3>Crear un artículo, Editarlo o Borrarlo.</h3>
+            <h3>Recuerda que cada 10 minutos se reiniciará la BD.</h3>
           </div>
         </div>
       )}

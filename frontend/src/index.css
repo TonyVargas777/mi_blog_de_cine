@@ -175,7 +175,6 @@ img {
 .jumbo {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   width: 85%;
   height: fit-content;
   padding: 55px;
@@ -229,10 +228,10 @@ h3 {
 button,
 input[type="submit"],
 input[type="button"],
-.edit {
+.edit, .volver, .delete {
   text-decoration: none;
   background: #0b70e1;
-  width: auto;
+  max-width: auto;
   color: white;
   border: 1px solid white;
   outline: 0;
@@ -256,6 +255,12 @@ input[type="button"],
 }
 .delete:hover {
   background: #9b0202;
+}
+.volver {
+  margin-top: 50px;
+}
+.volver:hover {
+  background: blue;
 }
 .lateral {
   grid-area: lateral;
