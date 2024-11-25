@@ -51,7 +51,7 @@ app.listen(puerto, () => {
 });
 
 // Configurar la tarea cron (ejecuta cada día a medianoche)
-cron.schedule('*/1 * * * *', async () => {
+cron.schedule('*/10 * * * *', async () => {
     try {
         console.log("Ejecutando tarea automática para actualizar la base de datos...");
         await actualizarBaseDeDatos();
