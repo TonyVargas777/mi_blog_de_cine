@@ -1,12 +1,10 @@
 const { conexion } = require("./basedatos/conexion");
 const express = require("express");
 const cors = require("cors");
+const cron = require('node-cron');
+const { actualizarBaseDeDatos } = require('./helpers/actualizarDB');
+const actualizarRouter = require('./rutas/actualizar');
 
-// Inicializar app
-console.log("App de node arrancada");
-
-// Conectar a la base de datos
-conexion();
 
 // Crear servidor Node
 const app = express();
@@ -14,6 +12,15 @@ const puerto = 3900;
 
 // Configurar cors
 app.use(cors());
+app.use('/api', actualizarRouter);
+
+// Inicializar app
+console.log("App de node arrancada");
+
+// Conectar a la base de datos
+conexion();
+
+
 
 // Convertir body a objeto js
 app.use(express.json()); // recibir datos con content-type app/json
@@ -41,5 +48,16 @@ app.get("/", (req, res) => {
 // Crear servidor y escuchar peticiones http
 app.listen(puerto, () => {
     console.log("Servidor corriendo en el puerto " + puerto);
+});
+
+// Configurar la tarea cron (ejecuta cada día a medianoche)
+cron.schedule('*/1 * * * *', async () => {
+    try {
+        console.log("Ejecutando tarea automática para actualizar la base de datos...");
+        await actualizarBaseDeDatos();
+        console.log("Tarea cron finalizada correctamente.");
+    } catch (error) {
+        console.error("Error durante la ejecución de la tarea cron:", error);
+    }
 });
 

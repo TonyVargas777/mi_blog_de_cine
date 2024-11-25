@@ -100,6 +100,9 @@ body {
   padding: 5px;
   border: 6px double blue;
 }
+img {
+  border: 8px double blue;
+}
 .articulo-item {  
   display: flex;
   flex-grow: 1;
@@ -112,20 +115,20 @@ body {
   width: 15%;
   margin: 20px;
   align-items: center;
-  justify-content: flex-start;
-  min-height: 20%;
+  justify-content: flex-start;  
+  min-height: fit-content;
 }
 .articulo-item:hover {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
+  background: rgba(9, 9, 121, 1);
+  /* background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
-  );
-  border: 8px solid white;
-  outline: #0b70e1 3px solid;
-  transform: scale(1.1);
+  ); */
+  /* border: 8px solid white; */
+  /* outline: #0b70e1 3px solid; */
+  /* transform: scale(1.1); */
   transition: all 400ms;
   color: white;
   box-shadow: 10px 10px 20px #03228f;
@@ -146,12 +149,10 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
-img {
-  border: 8px double blue;
-}
-.articulo-item .mascara img {
+.articulo-item img {
   width: 100%;
   max-width: 250px;
+  aspect-ratio: 4/3;
 }
 .articulo-item .datos {  
   flex-grow: 1;
@@ -162,14 +163,10 @@ img {
 .articulo-item p {
   text-align: justify;
 }
-.articulo-item h3 {
-  font-size: 30px;  
-  flex-grow: 1;
-}
 .articulo-item h3 a {
   text-decoration: none;
   color: black;
-  font-size: 30px;
+  font-size: 20px;
   flex-grow: 1;
 }
 .articulo-item h3 a:hover {
@@ -178,7 +175,7 @@ img {
 .jumbo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   width: 85%;
   height: fit-content;
   padding: 55px;
@@ -196,7 +193,7 @@ img {
   color: white;
 }
 .jumbo img {
-  width: 115%;
+  width: 100%;
 }
 .jumbo h1 {
   font-size: 35px;
@@ -345,6 +342,46 @@ footer {
   width: 100%;
 }
 
+.popup-confirmacion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: lightskyblue;
+  padding: 20px;
+  border-radius: 5px;
+  border-color:#000;
+  border-style: double;
+  text-align: center;
+}
+
+.popup-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup-content button:first-child {
+  background: #f44336;
+  color: white;
+}
+
+.popup-content button:last-child {
+  background: red;
+  color: white;
+}
+
+
 .dots-container {
   margin-top: 50px;
   display: flex;
@@ -447,7 +484,8 @@ footer {
     grid-template-columns: 100%;
   }  
   .articulo-item .mascara {
-    width: 200px;
+    width: 200px;    
+    margin-top: 35px;
   }  
   .content {
     display: flex;
@@ -460,7 +498,6 @@ footer {
   .articulo-item {
     width: 30%;
     min-height: fit-content;
-    margin-top: 20px;
     margin: 20px;
   }
   .content{
