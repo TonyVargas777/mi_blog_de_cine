@@ -1,15 +1,15 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 
 export const Contacto = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div className="jumbo">
       <h1>Contacto:</h1>
-      <article>
+      <div className="articles">
+      <article className="red">
         <a
           href="https://linkedin.com/in/tony-vargas-garcía-122b1424b"
           target="blank"
@@ -21,17 +21,19 @@ export const Contacto = () => {
             alt="LinkedIn"
             height="40px"
             width="40px"
+            target="blank"
           ></img>
         </a>
       </article>
       <a
         href="https://linkedin.com/in/tony-vargas-garcía-122b1424b"
         alt="linkedin"
+        target="blank"
       >
-        https://linkedin.com/in/tony-vargas-garcía-122b1424b
+        LinkedIn: Tony Vargas García
       </a>
 
-      <div>
+      <article className="red">
         <a href="https://wa.me/34661871759" target="blank" title="WhatsApp">
           <img
             className="red"
@@ -42,16 +44,17 @@ export const Contacto = () => {
             width="40px"
           ></img>
         </a>
-      </div>
-      <a href="https://wa.me/34661871759" alt="github">
-        WhatsApp number: +34 661 87 17 59
+      </article>
+      <a href="https://wa.me/34661871759" alt="github" target="blank">
+        WhatsApp Number
       </a>
-      <article>
+      <article className="red">
         <a
           href="https://github.com/TonyVargas777"
           alt="github"
           height="40px"
           width="40px"
+          target="blank"
         >
           <img
             className="red"
@@ -60,27 +63,37 @@ export const Contacto = () => {
             alt="github"
             height="40px"
             width="40px"
+            target="blank"
           ></img>
         </a>
       </article>
-      <a href="https://github.com/TonyVargas777" alt="github">
-        https://github.com/TonyVargas777
+      <a href="https://github.com/TonyVargas777" alt="github" target="blank">
+        GitHub: TonyVargas777
       </a>
-      <article>
-        <a href="mailto:tonacovargas@hotmail.com" target="blank">
+      <article className="red">
+        <a
+          href="mailto:tonacovargas@hotmail.com"
+          alt="github"
+          height="40px"
+          width="40px"
+          target="blank"
+        >
           <img
             className="red"
             align="center"
-            src="img/email.jpg"
+            src="https://raw.githubusercontent.com/TonyVargas777/portafolio/main/public/img/email.jpg"
             alt="email"
-            height="40"
-            width="40"
+            height="40px"
+            width="40px"
+            target="blank"
           ></img>
         </a>
       </article>
       <a href="mailto:tonacovargas@hotmail.com" target="blank">
-        tonacovargas@hotmail.com
+        tonacovargas@gmail.com
       </a>
+      
+    </div>
     </div>
   );
 };

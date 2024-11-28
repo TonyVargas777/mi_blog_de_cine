@@ -157,8 +157,8 @@ export const Editar = () => {
         <div className="popup-confirmacion">
           <div className="popup-content">
             <h3>¿Estás seguro de que quieres guardar los cambios?</h3>
-            <button onClick={cancelarEdicion}>No</button>
-            <button onClick={confirmarEdicion}>Sí</button>
+            <button className="volver" onClick={cancelarEdicion}>No</button>
+            <button className="delete" onClick={confirmarEdicion}>Sí</button>
             <h3>Recuerda que esta página es una demo.</h3>
             <h3>Puedes realizar diferentes tareas como:</h3>
             <h3>Crear un artículo, Editarlo o Borrarlo.</h3>

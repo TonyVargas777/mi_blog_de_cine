@@ -84,7 +84,7 @@ export const Articulo = () => {
               )}
               {articulo.imagen === "default.png" && (
                 <img
-                  src="https://www.idsplus.net/wp-content/uploads/js-logo-badge-512.png.png"
+                  src="https://www.idsplus.net/wp-content/uploads/js-logo-badge-512.png"
                   alt="Imagen por defecto"
                 />
               )}
@@ -121,8 +121,8 @@ export const Articulo = () => {
             <div className="popup-confirmacion">
               <div className="popup-content">
                 <h3>¿Estás seguro de que quieres borrar este artículo?</h3>
-                <button onClick={cancelarEliminacion}>No</button>
-                <button onClick={confirmarEliminacion}>Sí</button>
+                <button className="volver" onClick={cancelarEliminacion}>No</button>
+                <button className="delete" onClick={confirmarEliminacion}>Sí</button>
                 <h3>Recuerda que esta página es una demo.</h3>
             <h3>Puedes realizar diferentes tareas como:</h3>
             <h3>Crear un artículo, Editarlo o Borrarlo.</h3>

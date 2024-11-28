@@ -74,8 +74,8 @@ export const Crear = () => {
         {resultado === "guardado" ? "Artículo guardado con éxito" : ""}
       </strong>
       <strong>{resultado === "error" ? "Los datos son incorrectos" : ""}</strong>
-
-      <form className="formulario" onSubmit={(e) => e.preventDefault()}>
+      <div className="formulario">
+      <form onSubmit={(e) => e.preventDefault()}>
         <div className="form-group">
           <label htmlFor="titulo">Título</label>
           <input
@@ -118,20 +118,21 @@ export const Crear = () => {
 
         <button
           type="button"
-          className="btn btn-success"
+          className="edit"
           onClick={handleGuardarClick} // Mostrar el popup al hacer click en Guardar
         >
           Guardar
         </button>
       </form>
+      </div>
 
       {/* Popup de confirmación */}
       {mostrarPopup && (
         <div className="popup">
           <div className="popup-content">
             <p>¿Estás seguro de que quieres guardar el artículo?</p>
-            <button onClick={confirmarGuardar}>Sí</button>
-            <button onClick={cancelarGuardar}>No</button>
+            <button className="delete" onClick={confirmarGuardar}>Sí</button>
+            <button className="volver" onClick={cancelarGuardar}>No</button>
             <h3>Recuerda que esta página es una demo.</h3>
             <h3>Puedes realizar diferentes tareas como:</h3>
             <h3>Crear un artículo, Editarlo o Borrarlo.</h3>
