@@ -23,7 +23,8 @@ Este es un proyecto de blog de cine desarrollado con el stack MERN (MongoDB, Exp
 
 ## 🌐 Demo en Vivo
 
-- https://mi-blog-de-cine.vercel.app/inicio
+- <a href="https://mi-blog-de-cine.vercel.app/inicio" target="_blank">Demo del proyecto</a>
+
 
 ## 📦 Instalación y Uso Local
 
