@@ -43,7 +43,7 @@ export const Articulos = () => {
       ) : articulos.length >= 1 ? (
         <Listado articulos={articulos} setArticulos={setArticulos} />
       ) : (
-        <h1>No hay artículos</h1>
+        <h2>No hay artículos</h2>
       )}
     </>
   );

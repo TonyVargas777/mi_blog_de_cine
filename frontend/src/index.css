@@ -123,17 +123,17 @@ img {
 .articulo-item {  
   display: flex;
   flex-grow: 1;
-  overflow: hidden;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  
+  min-height: fit-content;
+  overflow: hidden;
   background: lightblue;
   background-image: url(/img/fondo-puntos-azules-color-blanco_42331-244.avif);
   border: double 15px rgba(255, 255, 255, 1);
   border-radius: 15px;
   width: 15%;
   margin: 20px;
-  align-items: center;
-  justify-content: flex-start;  
-  min-height: fit-content;
 }
 .articulo-item:hover {
   background: rgba(9, 9, 121, 1);
@@ -152,10 +152,11 @@ img {
 .articulo-item .mascara {
   flex-grow: 1;
   width: 70%;
-  height: 155px;
+  margin-top: 15px;
+  height: fit-content;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .articulo-item img {
   width: 100%;
@@ -174,7 +175,7 @@ img {
 .articulo-item h3 a {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   flex-grow: 1;
 }
 .articulo-item h3 a:hover {

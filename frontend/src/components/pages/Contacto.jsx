@@ -7,7 +7,7 @@ export const Contacto = () => {
 
   return (
     <div className="jumbo">
-      <h1>Contacto:</h1>
+      <h2>Contacto:</h2>
       <div className="articles">
       <article className="red">
         <a

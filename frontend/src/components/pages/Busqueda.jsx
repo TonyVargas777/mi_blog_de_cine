@@ -44,7 +44,7 @@ export const Busqueda = () => {
         <Listado articulos={articulos} setArticulos={setArticulos} />
       ) : (
         <div className="jumbo">
-          <h1>No hay artículos con esos datos.</h1>
+          <h2>No hay artículos con esos datos.</h2>
         </div>
       )}
     </>
