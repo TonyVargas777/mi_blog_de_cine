@@ -73,7 +73,7 @@ export const Articulo = () => {
         </section>
       ) : (
         <>
-          <h1>{articulo.titulo}</h1>
+          <h2>{articulo.titulo}</h2>
           <div className="jumbo-articulo">
             <div className="mascara">
               {articulo.imagen !== "default.png" && (
@@ -90,9 +90,9 @@ export const Articulo = () => {
               )}
             </div>
             <div className="ficha-articulo">
-              <h1>
+              <h2>
                 <b>{articulo.fecha}</b>
-              </h1>
+              </h2>
               <h3>{articulo.contenido}</h3>
             </div>
           </div>

@@ -67,7 +67,7 @@ export const Crear = () => {
 
   return (
     <div className="jumbo">
-      <h1>Crear artículo:</h1>
+      <h2>Crear artículo:</h2>
       <p>Formulario para crear un artículo:</p>
 
       <strong>

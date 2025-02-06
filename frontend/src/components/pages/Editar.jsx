@@ -98,7 +98,7 @@ export const Editar = () => {
 
   return (
     <div className="jumbo">
-      <h1>Editar artículo:</h1>
+      <h2>Editar artículo:</h2>
       <p>Formulario para editar: {articulo.titulo}</p>
 
       <strong>
