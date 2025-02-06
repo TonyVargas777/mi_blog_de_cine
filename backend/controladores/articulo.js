@@ -123,26 +123,32 @@ const borrar = (req, res) => {
 }
 
 const editar = (req, res) => {
-    // Recorger id articulo a editar
+    // Recoger id del artículo a editar
     let articuloId = req.params.id;
 
     // Recoger datos del body
     let parametros = req.body;
 
-    // Validar datos
-    try {
-        validarArticulo(parametros);
-
-    } catch (error) {
+    // Comprobar si hay datos para actualizar
+    if (Object.keys(parametros).length === 0) {
         return res.status(400).json({
             status: "error",
-            mensaje: "Faltan datos por enviar"
+            mensaje: "No se ha proporcionado ningún dato para actualizar"
         });
     }
 
-    // Buscar y actualizar articulo
-    Articulo.findOneAndUpdate({ _id: articuloId }, req.body, { new: true }, (error, articuloActualizado) => {
+    // Validar datos (modo edición)
+    try {
+        validarArticulo(parametros, true);
+    } catch (error) {
+        return res.status(400).json({
+            status: "error",
+            mensaje: error.message
+        });
+    }
 
+    // Buscar y actualizar artículo
+    Articulo.findOneAndUpdate({ _id: articuloId }, parametros, { new: true }, (error, articuloActualizado) => {
         if (error || !articuloActualizado) {
             return res.status(500).json({
                 status: "error",
@@ -154,10 +160,10 @@ const editar = (req, res) => {
         return res.status(200).json({
             status: "success",
             articulo: articuloActualizado
-        })
+        });
     });
+};
 
-}
 
 const subir = (req, res) => {
 

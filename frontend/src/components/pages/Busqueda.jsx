@@ -32,7 +32,7 @@ export const Busqueda = () => {
   return (
     <>
       {cargando ? (
-        <section class="dots-container">
+        <section className="dots-container">
         <div class="dot"></div>
         <div class="dot"></div>
         <div class="dot"></div>

@@ -5,49 +5,62 @@ import { Peticion } from "../../helpers/Peticion";
 import { Global } from "../../helpers/Global";
 
 export const Editar = () => {
-  const { formulario, enviado, cambiado } = useForm({});
+  const { formulario, setFormulario, cambiado } = useForm({});
   const [resultado, setResultado] = useState("no_enviado");
   const [articulo, setArticulo] = useState({});
-  const [showConfirmPopup, setShowConfirmPopup] = useState(false); // Estado para el popup
-  const [articuloAEditar, setArticuloAEditar] = useState(null); // Para almacenar el artículo a editar
+  const [showConfirmPopup, setShowConfirmPopup] = useState(false);
   const params = useParams();
-  const navigate = useNavigate(); // Para redirigir al artículo después de guardar
+  const navigate = useNavigate();
 
   useEffect(() => {
+    const conseguirArticulo = async () => {
+      const { datos } = await Peticion(
+        Global.url + "articulo/" + params.id,
+        "GET"
+      );
+      if (datos.status === "success") {
+        setArticulo(datos.articulo);
+        setFormulario({
+          titulo: datos.articulo.titulo,
+          contenido: datos.articulo.contenido,
+          fecha: datos.articulo.fecha,
+        });
+      }
+    };
     conseguirArticulo();
-  }, [params._id]);
-
-  const conseguirArticulo = async () => {
-    const { datos } = await Peticion(
-      Global.url + "articulo/" + params.id,
-      "GET"
-    );
-    if (datos.status === "success") {
-      setArticulo(datos.articulo);
-    }
-  };
+  }, [params.id, setFormulario]);
 
   const editarArticulo = async (e) => {
-    e.preventDefault();
-    let nuevoArticulo = formulario;
-
+    if (e) e.preventDefault();
+  
+    // Crear una copia del formulario actual
+    let nuevoArticulo = { ...formulario };
+  
+    // Verificar y asignar valores si faltan
+    if (!nuevoArticulo.titulo) {
+      nuevoArticulo.titulo = articulo.titulo;
+    }
+    if (!nuevoArticulo.contenido) {
+      nuevoArticulo.contenido = articulo.contenido;
+    }
+  
     const { datos } = await Peticion(
       Global.url + "articulo/" + params.id,
       "PUT",
       nuevoArticulo
     );
-
+  
     if (datos.status === "success") {
       setResultado("guardado");
-
+  
       const fileInput = document.querySelector("#file");
-
-      if (datos.status === "success" && fileInput[0]) {
+  
+      if (fileInput.files[0]) {
         const formData = new FormData();
-        formData.append("file0", fileInput[0]);
-
+        formData.append("file0", fileInput.files[0]);
+  
         const subida = await Peticion(
-          Global.url + "subir-imagen/" + datos.articulo,
+          Global.url + "subir-imagen/" + datos.articulo._id,
           "POST",
           formData,
           true
@@ -62,21 +75,23 @@ export const Editar = () => {
       setResultado("error");
     }
   };
+  
 
   const mostrarPopupConfirmacion = () => {
-    setShowConfirmPopup(true); // Mostrar el popup
+    setShowConfirmPopup(true);
   };
 
   const cancelarEdicion = () => {
-    setShowConfirmPopup(false); // Ocultar el popup sin hacer nada
+    setShowConfirmPopup(false);
   };
 
-  const confirmarEdicion = () => {
-    editarArticulo(); // Llamar a la función de edición
-    setShowConfirmPopup(false); // Cerrar el popup
-    navigate("/articulo/" + params.id); // Redirigir al artículo editado
+  const confirmarEdicion = async (e) => {
+    e.preventDefault();
+    await editarArticulo(e);
+    setShowConfirmPopup(false);
+    navigate("/articulo/" + params.id);
   };
-
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -90,10 +105,10 @@ export const Editar = () => {
         {resultado === "guardado" ? "Artículo guardado con éxito" : ""}
       </strong>
       <strong>
-        {resultado === "error" ? "Los datos son incorrectos" : ""}
+        {resultado === "error" ? "Debes cambiar al menos un campo" : ""}
       </strong>
 
-      <form className="formulario" onSubmit={(e) => e.preventDefault()}>
+      <form className="formulario" onSubmit={editarArticulo}>
         <div className="form-group">
           <label htmlFor="titulo">Título</label>
           <input
@@ -105,7 +120,7 @@ export const Editar = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="titulo">Fecha</label>
+          <label htmlFor="fecha">Fecha</label>
           <input
             type="text"
             name="fecha"
@@ -126,33 +141,25 @@ export const Editar = () => {
         <div className="form-group">
           <label htmlFor="file0">Imagen</label>
           <div className="mascara">
-            {articulo.imagen !== "default.png" && (
-              <img src={Global.url + "imagen/" + articulo.imagen} />
-            )}
-            {articulo.imagen === "default.png" && (
-              <img src="https://www.idsplus.net/wp-content/uploads/js-logo-badge-512.png" />
+            {articulo.imagen !== "default.png" ? (
+              <img src={Global.url + "imagen/" + articulo.imagen} alt="Imagen del artículo" />
+            ) : (
+              <img src="https://www.idsplus.net/wp-content/uploads/js-logo-badge-512.png" alt="Imagen por defecto" />
             )}
           </div>
           <input type="file" name="file0" id="file" />
         </div>
+
         <div>
-          {/* Botón para mostrar el popup */}
-          <button
-            type="button"
-            onClick={mostrarPopupConfirmacion}
-            className="edit"
-          >
+          <button type="button" onClick={mostrarPopupConfirmacion} className="edit">
             Guardar
           </button>
-          {/* Botón Volver */}
-
-          <button className="volver" onClick={() => navigate("/articulos")}>
+          <button className="volver" type="button" onClick={() => navigate("/articulos")}> 
             Volver
           </button>
         </div>
       </form>
 
-      {/* Popup de confirmación */}
       {showConfirmPopup && (
         <div className="popup-confirmacion">
           <div className="popup-content">
