@@ -1,19 +1,22 @@
-html {  
+html {
   height: 100%;
   background-image: url(/img/fondo-puntos-azules-color-blanco_42331-244.avif);
   background-attachment: fixed;
 }
+
 body {
   font-family: Lucida Handwriting, sans-serif, Arial, Helvetica;
   text-align: center;
   display: flex;
   flex-direction: column;
- height: 100%;
+  height: 100%;
 }
-article{
+
+article {
   margin-top: 10px;
 }
-.articles{  
+
+.articles {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,10 +26,13 @@ article{
   border: 2px solid blue;
   border-radius: 10px;
   box-shadow: 0px 0px 6px #ddd;
+  width: fit-content;
 }
+
 .articles a {
   margin-top: 15px;
 }
+
 .layout {
   width: 100%;
   height: 100%;
@@ -39,7 +45,8 @@ article{
   grid-template-rows: 100px 70px auto 70px;
   grid-template-columns: 1fr 1fr 1fr 15%;
 }
-.header {  
+
+.header {
   grid-area: header;
   width: 100%;
   height: 100px;
@@ -50,38 +57,44 @@ article{
   top: 0;
   background: transparent;
 }
+
 .header h1 {
   margin-top: 30px;
 }
+
 .camara {
   width: 200px;
   margin-right: -25px;
   margin-left: -35px;
+
 }
+
 .camara img {
   width: 40%;
 }
+
 .nav {
   grid-area: nav;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%);
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   width: 100%;
 }
-.nav > ul {
+
+.nav>ul {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
+
 .nav li {
   padding: 0px;
 }
+
 .nav a {
   display: block;
   margin-left: 30px;
@@ -92,14 +105,16 @@ article{
   text-decoration: none;
   transition: all 300ms;
 }
+
 .nav a:hover {
   transform: scale(1.2, 1.2);
 }
+
 .content {
   grid-area: content;
   display: flex;
   flex-flow: row wrap;
-  align-items: initial;  
+  align-items: initial;
   justify-content: center;
   padding-top: 16px;
   margin-bottom: 30px;
@@ -107,25 +122,42 @@ article{
   min-height: screen;
   min-width: screen;
 }
-#mern{
+
+#mern {
   width: 40%;
   padding: 5px;
   border: 6px double white;
 }
-#gif{
+
+#gif {
   width: 45%;
   padding: 5px;
   border: 6px double blue;
 }
+
 img {
   border: 8px double blue;
 }
-.articulo-item {  
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio_p {
+  max-width: 500px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.articulo-item {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;  
+  justify-content: flex-start;
   min-height: fit-content;
   overflow: hidden;
   background: lightblue;
@@ -135,20 +167,24 @@ img {
   width: 15%;
   margin: 20px;
 }
+
 .articulo-item:hover {
   background: rgba(9, 9, 121, 1);
   transition: all 400ms;
   color: white;
   box-shadow: 10px 10px 20px #03228f;
-  & img {    
+
+  & img {
     transform: scale(1.3);
     transition: all 300ms;
     border: 6px double white;
   }
+
   & a {
     color: white;
   }
 }
+
 .articulo-item .mascara {
   flex-grow: 1;
   width: 70%;
@@ -158,55 +194,64 @@ img {
   justify-content: center;
   align-items: flex-start;
 }
+
 .articulo-item img {
   width: 100%;
   max-width: 250px;
   aspect-ratio: 4/3;
 }
-.articulo-item .datos {  
+
+.articulo-item .datos {
   flex-grow: 1;
   width: 90%;
   text-align: center;
   margin-top: 15px;
 }
+
 .articulo-item p {
   text-align: justify;
 }
+
 .articulo-item h3 a {
   text-decoration: none;
   color: black;
   font-size: 15px;
   flex-grow: 1;
 }
+
 .articulo-item h3 a:hover {
   color: gold;
 }
+
 .jumbo {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 85%;
   height: fit-content;
   padding: 55px;
   padding-bottom: 75px;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%);
   border: 2px solid blue;
   border-radius: 10px;
   box-shadow: 0px 0px 6px #ddd;
   margin: 25px auto;
   color: white;
 }
+
 .jumbo img {
   width: 100%;
 }
+
 .jumbo h1 {
   font-size: 35px;
   color: white;
 }
+
 .jumbo p,
 h3 {
   display: block;
@@ -214,31 +259,63 @@ h3 {
   color: white;
   margin-top: 15px;
 }
-.jumbo a {
-  color:white;
+h4 {
+  color: white;
+  margin: 10px 0 0 0;
+  font-size: 20px;
 }
+
+.jumbo a {
+  color: white;
+}
+
 .red {
   background: #000;
   height: 40px;
   width: 40px;
 }
+
+.red_footers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: transparent;
+}
+
+.red_footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  background: transparent;
+  height: 20px;
+  width: 20px;
+  padding-right: 20px;
+}
+
 .title {
   color: #000;
 }
+
 .jumbo-articulo {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .ficha-articulo {
   width: 50%;
   text-align: justify;
 }
+
 .button,
 button,
 input[type="submit"],
 input[type="button"],
-.edit, .volver, .delete {
+.edit,
+.volver,
+.delete {
   text-decoration: none;
   background: #0b70e1;
   max-width: auto;
@@ -254,24 +331,31 @@ input[type="button"],
   cursor: pointer;
   transition: all 300ms;
 }
+
 .edit {
   margin: 20px;
 }
+
 .edit:hover {
   background: #e77b00;
 }
+
 .delete {
   margin: 20px;
 }
+
 .delete:hover {
   background: #9b0202;
 }
+
 .volver {
   margin: 20px;
 }
+
 .volver:hover {
   background: blue;
 }
+
 .lateral {
   grid-area: lateral;
   padding-top: 80%;
@@ -279,6 +363,7 @@ input[type="button"],
   width: auto;
   border-left: 5px double white;
 }
+
 input[type="text"],
 textarea {
   display: block;
@@ -293,6 +378,7 @@ textarea {
   outline: 0;
   border-color: transparent;
 }
+
 .search {
   width: 13%;
   border: 2px solid blue;
@@ -305,30 +391,36 @@ textarea {
   border-radius: 10px;
   box-shadow: 0px 0px 6px #ddd;
 }
-.formulario{
-  display:flex;
+
+.formulario {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
   width: 100%;
 }
+
 .search input {
   border: 1px solid lightgrey;
 }
+
 textarea {
   height: 120px;
 }
+
 .form-group {
   width: 100%;
   margin: 0 auto;
 }
+
 .form-group label {
   display: block;
   text-align: left;
   color: white;
   margin-bottom: 5px;
 }
+
 .form-group input[type="text"],
 .form-group input[type="file"],
 .form-group textarea {
@@ -337,27 +429,44 @@ textarea {
   width: 100%;
   margin-bottom: 15px;
 }
+
 footer {
   grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: #d1defa;
   color: #454545;
   border-top: 1px solid white;
-  text-align: left;
-  line-height: 60px;
+  text-align: center;
+  line-height: fit-content;
+  padding: 10px;
   padding-left: 25px;
   margin-top: auto;
-  width: 99%; 
-  position:fixed;
+  width: 99%;
+  position: fixed;
   bottom: 0;
 }
+
+footer img {
+  border: transparent;
+}
+
+.articles img {
+  border: none;
+}
+
 .jumbo .mascara {
   width: 250px;
   height: 30%;
 }
+
 .form-group .mascara {
   margin: 0px;
   width: 100%;
 }
+
 .form-group .mascara img {
   width: 100%;
 }
@@ -379,7 +488,7 @@ footer {
   background: lightskyblue;
   padding: 20px;
   border-radius: 5px;
-  border-color:#000;
+  border-color: #000;
   border-style: double;
   text-align: center;
 }
@@ -390,19 +499,7 @@ footer {
   font-size: 16px;
   cursor: pointer;
 }
-/* .popup-content button:hover {
-  background: #0b70e1;
-}
 
-.popup-content button:first-child {
-  background: #f44336;
-  color: white;
-}
-
-.popup-content button:last-child {
-  background: red;
-  color: white;
-} */
 
 
 .dots-container {
@@ -474,14 +571,17 @@ footer {
   white-space: nowrap;
   animation: typing 3s steps(20) 1s 1 both, blink 1s steps(1) infinite;
 }
+
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 425px;
   }
 }
+
 @keyframes blink {
   50% {
     border-color: transparent;
@@ -489,10 +589,11 @@ footer {
 }
 
 @media (max-width: 1000px) {
-  body{
+  body {
     width: 100%;
     height: 100%;
   }
+
   .layout {
     width: 97%;
     height: 100%;
@@ -505,11 +606,13 @@ footer {
       "footer";
     grid-template-rows: 100px 70px auto 50px 50px;
     grid-template-columns: 100%;
-  }  
+  }
+
   .articulo-item .mascara {
-    width: 200px;    
+    width: 200px;
     margin-top: 35px;
-  }  
+  }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -518,77 +621,92 @@ footer {
     max-width: 100vh;
     justify-items: center;
   }
+
   .articulo-item {
     width: 30%;
     min-height: fit-content;
     margin: 20px;
   }
-  .content{
-    flex-direction: row;    
+
+  .content {
+    flex-direction: row;
     max-width: 100vh;
   }
-   nav {    
+
+  nav {
     display: flex;
     flex-direction: column;
-    width: 100vh;    
+    width: 100vh;
   }
-  .header{
+
+  .header {
     position: relative;
   }
-  .h1_header{
-    margin-left:3%;
+
+  .h1_header {
+    margin-left: 3%;
   }
-  .jumbo{
+
+  .jumbo {
     width: 80%;
-    
+
     max-width: 100vh;
-    
+
   }
+
   .jumbo-articulo {
     align-items: center;
   }
+
   .jumbo-articulo img {
     width: 200px;
   }
+
   .camara {
     width: 20%;
     margin-right: -25px;
     margin-left: -55px;
-  }  
+  }
+
   .lateral {
     grid-area: lateral;
     display: flex;
     justify-content: center;
   }
+
   .search {
     display: flex;
     flex-direction: row;
     width: 90%;
-    height: 90px;    
+    height: 90px;
     margin: 20px;
     padding: 20px;
     padding-top: 10px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 6px #ddd;    
+    box-shadow: 0px 0px 6px #ddd;
     bottom: -15px;
     left: 20px;
     position: fixed;
   }
-  .search form{
+
+  .search form {
     display: flex;
     width: 90%;
-  }  
-  .footer{
+  }
+
+  .footer {
     grid-area: footer;
     display: none;
   }
 }
+
 @media (max-width: 600px) {
-  html{
+  html {
     width: 100%;
     height: 100%;
-  }  
+  }
+
   .layout {
     width: 99%;
     height: 100%;
@@ -602,32 +720,38 @@ footer {
     grid-template-rows: 100px 70px auto 50px 50px;
     grid-template-columns: auto;
   }
-  nav { 
+
+  nav {
     display: flex;
     flex-direction: column;
     width: 100vh;
   }
-  .header{
+
+  .header {
     position: relative;
   }
+
   .camara {
     width: 20%;
     height: 20%;
     margin-right: -25px;
     margin-left: -55px;
   }
-  .content{
+
+  .content {
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .jumbo{    
+
+  .jumbo {
     width: 80%;
     max-width: 100vh;
     padding: 40px;
-  }  
-  .articulo-item{
+  }
+
+  .articulo-item {
     width: 70%;
     min-height: fit-content;
   }

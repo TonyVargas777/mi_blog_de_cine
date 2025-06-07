@@ -12,7 +12,7 @@ export const Contacto = () => {
       <article className="red">
         <a
           href="https://linkedin.com/in/tony-vargas-garcía-122b1424b"
-          target="blank"
+          target="_blank"
         >
           <img
             className="red"
@@ -21,20 +21,20 @@ export const Contacto = () => {
             alt="LinkedIn"
             height="40px"
             width="40px"
-            target="blank"
+            target="_blank"
           ></img>
         </a>
       </article>
       <a
         href="https://linkedin.com/in/tony-vargas-garcía-122b1424b"
         alt="linkedin"
-        target="blank"
+        target="_blank"
       >
         LinkedIn: Tony Vargas García
       </a>
 
       <article className="red">
-        <a href="https://wa.me/34661871759" target="blank" title="WhatsApp">
+        <a href="https://wa.me/34661871759" target="_blank" title="WhatsApp">
           <img
             className="red"
             align="center"
@@ -45,7 +45,7 @@ export const Contacto = () => {
           ></img>
         </a>
       </article>
-      <a href="https://wa.me/34661871759" alt="github" target="blank">
+      <a href="https://wa.me/34661871759" alt="github" target="_blank">
         WhatsApp Number
       </a>
       <article className="red">
@@ -54,7 +54,7 @@ export const Contacto = () => {
           alt="github"
           height="40px"
           width="40px"
-          target="blank"
+          target="_blank"
         >
           <img
             className="red"
@@ -63,33 +63,33 @@ export const Contacto = () => {
             alt="github"
             height="40px"
             width="40px"
-            target="blank"
+            target="_blank"
           ></img>
         </a>
       </article>
-      <a href="https://github.com/TonyVargas777" alt="github" target="blank">
+      <a href="https://github.com/TonyVargas777" alt="github" target="_blank">
         GitHub: TonyVargas777
       </a>
       <article className="red">
         <a
-          href="mailto:tonacovargas@hotmail.com"
+          href="mailto:tonacovargas@gmail.com"
           alt="github"
           height="40px"
           width="40px"
-          target="blank"
+          target="_blank"
         >
           <img
             className="red"
             align="center"
-            src="https://raw.githubusercontent.com/TonyVargas777/portafolio/main/public/img/email.jpg"
+            src="https://raw.githubusercontent.com/TonyVargas777/portafolio/main/public/img/email.png"
             alt="email"
             height="40px"
             width="40px"
-            target="blank"
+            target="_blank"
           ></img>
         </a>
       </article>
-      <a href="mailto:tonacovargas@hotmail.com" target="blank">
+      <a href="mailto:tonacovargas@hotmail.com" target="_blank">
         tonacovargas@gmail.com
       </a>
       
