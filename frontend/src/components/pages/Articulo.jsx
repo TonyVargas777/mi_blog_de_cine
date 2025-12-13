@@ -81,7 +81,7 @@ export const Articulo = () => {
                   src={Global.url + "imagen/" + articulo.imagen}
                   alt={articulo.titulo}
                 />
-              )}
+              )}z
               {articulo.imagen === "default.png" && (
                 <img
                   src="https://www.idsplus.net/wp-content/uploads/js-logo-badge-512.png"
