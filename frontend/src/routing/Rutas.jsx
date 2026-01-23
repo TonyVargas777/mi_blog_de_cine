@@ -31,7 +31,9 @@ export const Rutas = () => {
 
           <Route path="/*" element={
             <div className="jumbo">
-              <h1>Error 404</h1>
+            <div className="error-404">
+              <img src="img/error_404.jpeg" alt="Error 404" />
+            </div>
             </div>
           }/>
         </Routes>

@@ -43,7 +43,10 @@ export const Articulos = () => {
       ) : articulos.length >= 1 ? (
         <Listado articulos={articulos} setArticulos={setArticulos} />
       ) : (
+        <div className="jumbo">
+          <img className="error-404" src="/img/no_hay_articulos.avif" alt="No hay artículos" />
         <h2>No hay artículos</h2>
+        </div>
       )}
     </>
   );
